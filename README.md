@@ -5,7 +5,8 @@ The notebooks can be used directly online without installation thanks to [Binder
 
 ## Notebooks
 
-1. Minimal Example: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks)
+1. Minimal Example: 
 
 ### Devnotes:
 
