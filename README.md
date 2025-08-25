@@ -12,7 +12,7 @@ The notebooks can be used directly online without installation thanks to [Binder
 
 This repository was created with [cookiecutter](https://github.com/audreyr/cookiecutter) and [pyvsita cookie cutter](https://github.com/pyvista/cookiecutter-pyvista-binder)
 
-1. go to folder ```cd where_to_crete_repo```
+1. go to folder ```cd where_to_create_repo```
 1. New env ```conda create -n pypho_binder python=3.12 pipx```
 1. activate ```conda activate pypho_binder```
 1. add path to git: ```set PATH=%PATH%;Path_to_Git\Git\bin```
