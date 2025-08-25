@@ -1,4 +1,22 @@
 #!/bin/bash
+
+echo "-------------------------------------------------------"
+echo "Running start file"
+
+echo "Updating Pypho files"
+
+repo=https://raw.githubusercontent.com/GeoISTO/PyPho/refs/heads/main/pypho/
+
+filelist=("__init__.py" "camera.py" "graphics.py" "target.py")
+for file in "${filelist[@]}"; do
+    echo "Downloading $file from Pypho repo"
+    wget -O pypho/$file $repo$file
+    echo "-> Put in pypho/$file"
+done
+
+echo "Update done"
+echo "-------------------------------------------------------"
+
 export PYVISTA_TRAME_SERVER_PROXY_PREFIX="$JUPYTERHUB_SERVICE_PREFIX/proxy/"
 exec "$@"
 
