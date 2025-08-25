@@ -3,7 +3,10 @@
 This repository is to make the [PyPho notebooks](https://github.com/GeoISTO/PyPho_notebooks) illustrating [PyPho](https://github.com/GeoISTO/PyPho) available on [Binder](https://mybinder.org/).  
 The notebooks can be used directly online without installation thanks to [Binder](https://mybinder.org/).
 
-## Notebooks
+## Notebooks on Binder
+
+You can run the PyPho's notebooks directly on binder, online, no installation needed (see below).  
+If you want to get PyPho locally see the main repository [PyPho Repo](https://github.com/GeoISTO/PyPho) or the [Notebook repository](https://github.com/GeoISTO/PyPho_notebooks).
 
 To access the folder with all the notebooks: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks)  
 Aternativelly, go directly to a specific notebook:
