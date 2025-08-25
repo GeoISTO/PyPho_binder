@@ -1,6 +1,10 @@
 #!/bin/bash
-set -e # to exit when errors occur
+set -ex # to exit when errors occur
 
+echo "-------------------------------------------------------"
+echo "Running postBuild file"
+
+echo "Creating a pypho directory"
 mkdir pypho
 
 repo=https://raw.githubusercontent.com/GeoISTO/PyPho/refs/heads/main/pypho/
@@ -12,3 +16,6 @@ for file in "${file_list[@]}"; do
     wget -O pypho/+$file $repo+$file
     echo "-> Put in pypho/+$file"
 done
+
+echo "postBuild done"
+echo "-------------------------------------------------------"
