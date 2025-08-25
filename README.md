@@ -1,17 +1,26 @@
 # PyPho_notebooks
 
-This repository is to make the [PyPho](https://github.com/GeoISTO/PyPho_notebooks) illustrating [PyPho](https://github.com/GeoISTO/PyPho) available on [Binder](https://mybinder.org/).  
+This repository is to make the [PyPho notebooks](https://github.com/GeoISTO/PyPho_notebooks) illustrating [PyPho](https://github.com/GeoISTO/PyPho) available on [Binder](https://mybinder.org/).  
 The notebooks can be used directly online without installation thanks to [Binder](https://mybinder.org/).
 
 ## Notebooks
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks)
-1. Minimal Example: 
+To access the folder with all the notebooks: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks)  
+Aternativelly, go directly to a specific notebook:
+1. [![Binder](https://mybinder.org/badge_logo.svg) **PyPho's Minimal Example**](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2F01_minimal_example.ipynb) : This example shows how to create a basic camera and scene, visualize it interactively, and change the property shown on objects.
+1. [![Binder](https://mybinder.org/badge_logo.svg) **Camera definition**](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2F02_camera_definition.ipynb): 
+1. [![Binder](https://mybinder.org/badge_logo.svg) **Target Objects**](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2F03_target_objects.ipynb): 
+1. [![Binder](https://mybinder.org/badge_logo.svg) **Camera Manipulation**](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2F04_camera_manipulation.ipynb): 
 
-### Devnotes:
+## Devnotes:
 
-This repository was created with [cookiecutter](https://github.com/audreyr/cookiecutter) and [pyvsita cookie cutter](https://github.com/pyvista/cookiecutter-pyvista-binder)
+This repository was created with [cookiecutter](https://github.com/audreyr/cookiecutter) and [pyvsita cookie cutter](https://github.com/pyvista/cookiecutter-pyvista-binder).  
+Properly installing PyPho as a dependencies seems to introduce complications with the configuration  
+as it is not meant to work with the same vtk as the special configuration of pyvista in binder.  
+As a workaround, pypho's dependencies have been added to the [Dockerfile](./Dockerfile) and pypho's files are wget from the GitHub repository.  
+These files are downloaded again in the [start](./start) script to make sure they are up-to-date.
 
+Setup of the repository:
 1. go to folder ```cd where_to_create_repo```
 1. New env ```conda create -n pypho_binder python=3.12 pipx```
 1. activate ```conda activate pypho_binder```
@@ -19,7 +28,14 @@ This repository was created with [cookiecutter](https://github.com/audreyr/cooki
 1. run the cookiecutter ```pipx run cookiecutter gh:pyvista/cookiecutter-pyvista-binder```
 1. Publish the created repo to Github
 
-### Remove local information from the versionning
+Pypho then needs to be loaded locally in the notebook by adding the [root (..)](..) folder to the path.  
+This is achieved by adding at the start of the notebooks:
+```
+import sys
+sys.path.append("..)
+```
+
+## Remove local information from the versionning
 
 `.gitattributes` is setting up a `jq` filter `nbstrip` to remove metadata and execution counts from notebooks before commit.
 
