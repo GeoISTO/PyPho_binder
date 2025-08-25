@@ -1,21 +1,21 @@
 #!/bin/bash
-set -e # to exit when errors occur
+# set -e # to exit when errors occur
 
-echo "-------------------------------------------------------"
-echo "Running postBuild file"
+# echo "-------------------------------------------------------"
+# echo "Running postBuild file"
 
-echo "Creating a pypho directory"
-mkdir pypho
+# echo "Creating a pypho directory"
+# mkdir pypho
 
-repo=https://raw.githubusercontent.com/GeoISTO/PyPho/refs/heads/main/pypho/
-echo "Using Pyhpo's repo at: $repo"
+# repo=https://raw.githubusercontent.com/GeoISTO/PyPho/refs/heads/main/pypho/
+# echo "Using Pyhpo's repo at: $repo"
 
-filelist=("__init__.py" "camera.py" "graphics.py" "target.py" "rock_texture.vti")
-for file in "${filelist[@]}"; do
-    echo "Downloading $file from Pypho repo"
-    wget -O pypho/$file $repo$file
-    echo "-> Put in pypho/$file"
-done
+# filelist=("__init__.py" "camera.py" "graphics.py" "target.py" "rock_texture.vti")
+# for file in "${filelist[@]}"; do
+#     echo "Downloading $file from Pypho repo"
+#     wget -O pypho/$file $repo$file
+#     echo "-> Put in pypho/$file"
+# done
 
-echo "postBuild done"
-echo "-------------------------------------------------------"
+# echo "postBuild done"
+# echo "-------------------------------------------------------"
