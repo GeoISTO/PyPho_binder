@@ -10,11 +10,11 @@ mkdir pypho
 repo=https://raw.githubusercontent.com/GeoISTO/PyPho/refs/heads/main/pypho/
 echo "Using Pyhpo's repo at: $repo"
 
-file_list = ("__init__.py" "came.py" "graphics.py" "target.py" "rock_texture.vti")
-for file in "${file_list[@]}"; do
+filelist=("__init__.py" "came.py" "graphics.py" "target.py" "rock_texture.vti")
+for file in "${filelist[@]}"; do
     echo "Downloading $file from Pypho repo"
-    wget -O pypho/+$file $repo+$file
-    echo "-> Put in pypho/+$file"
+    wget -O pypho/$file $repo$file
+    echo "-> Put in pypho/$file"
 done
 
 echo "postBuild done"
