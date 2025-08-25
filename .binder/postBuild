@@ -1,5 +1,5 @@
 #!/bin/bash
-set -ex # to exit when errors occur
+set -e # to exit when errors occur
 
 echo "-------------------------------------------------------"
 echo "Running postBuild file"
@@ -10,7 +10,7 @@ mkdir pypho
 repo=https://raw.githubusercontent.com/GeoISTO/PyPho/refs/heads/main/pypho/
 echo "Using Pyhpo's repo at: $repo"
 
-filelist=("__init__.py" "came.py" "graphics.py" "target.py" "rock_texture.vti")
+filelist=("__init__.py" "camera.py" "graphics.py" "target.py" "rock_texture.vti")
 for file in "${filelist[@]}"; do
     echo "Downloading $file from Pypho repo"
     wget -O pypho/$file $repo$file
