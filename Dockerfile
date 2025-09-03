@@ -19,8 +19,3 @@ RUN wget -O pypho/rock_texture.vti https://raw.githubusercontent.com/GeoISTO/PyP
 RUN wget -O ./pyproject.toml https://raw.githubusercontent.com/GeoISTO/PyPho/refs/heads/main/pyproject.toml
 RUN echo "End Pypho Docker part"
 RUN echo "-----------------------------------------"
-RUN echo "Install Pypho locally"
-RUN pip install -e .
-RUN pip uninstall -y vtk
-RUN echo "End Install Pypho locally"
-RUN echo "-----------------------------------------"
