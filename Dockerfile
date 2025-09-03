@@ -21,5 +21,6 @@ RUN echo "End Pypho Docker part"
 RUN echo "-----------------------------------------"
 RUN echo "Install Pypho locally"
 RUN pip install -e .
+RUN pip uninstall vtk
 RUN echo "End Install Pypho locally"
 RUN echo "-----------------------------------------"
