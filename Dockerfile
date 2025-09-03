@@ -16,9 +16,10 @@ RUN wget -O pypho/camera.py https://raw.githubusercontent.com/GeoISTO/PyPho/refs
 RUN wget -O pypho/graphics.py https://raw.githubusercontent.com/GeoISTO/PyPho/refs/heads/main/pypho/graphics.py
 RUN wget -O pypho/target.py https://raw.githubusercontent.com/GeoISTO/PyPho/refs/heads/main/pypho/target.py
 RUN wget -O pypho/rock_texture.vti https://raw.githubusercontent.com/GeoISTO/PyPho/refs/heads/main/pypho/rock_texture.vti
+RUN wget -O ./pyproject.toml https://raw.githubusercontent.com/GeoISTO/PyPho/refs/heads/main/pyproject.toml
 RUN echo "End Pypho Docker part"
 RUN echo "-----------------------------------------"
 RUN echo "Install Pypho locally"
-RUN cd pypho; pip install -e . ; cd ..
+RUN pip install -e .
 RUN echo "End Install Pypho locally"
 RUN echo "-----------------------------------------"
