@@ -15,7 +15,7 @@ Aternativelly, go directly to a specific notebook:
 1. [![Binder](https://mybinder.org/badge_logo.svg) **Target Objects**](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2F03_target_objects.ipynb): presents the creation of target objects
 1. [![Binder](https://mybinder.org/badge_logo.svg) **Camera Manipulation**](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2F04_camera_manipulation.ipynb): detailed examples on how to manipulate cameras
 1. [![Binder](https://mybinder.org/badge_logo.svg) **PyPho Paper figures**](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2F11_pypho_paper_figures.ipynb): all the figures from the PyPho paper are generated through code illustrated in this notebook
-1. [![Binder](https://mybinder.org/badge_logo.svg) **Case studies**](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2F12_pypho_paperècase_studies.ipynb): 3 case studies as presented in the PyPho paper
+1. [![Binder](https://mybinder.org/badge_logo.svg) **Case studies**](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2F12_pypho_paper_case_studies.ipynb): 3 case studies as presented in the PyPho paper
 
 ## Licences
 
