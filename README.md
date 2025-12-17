@@ -11,9 +11,18 @@ If you want to get PyPho locally see the main repository [PyPho Repo](https://gi
 To access the folder with all the notebooks: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks)  
 Aternativelly, go directly to a specific notebook:
 1. [![Binder](https://mybinder.org/badge_logo.svg) **PyPho's Minimal Example**](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2F01_minimal_example.ipynb) : This example shows how to create a basic camera and scene, visualize it interactively, and change the property shown on objects.
-1. [![Binder](https://mybinder.org/badge_logo.svg) **Camera definition**](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2F02_camera_definition.ipynb): 
-1. [![Binder](https://mybinder.org/badge_logo.svg) **Target Objects**](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2F03_target_objects.ipynb): 
-1. [![Binder](https://mybinder.org/badge_logo.svg) **Camera Manipulation**](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2F04_camera_manipulation.ipynb): 
+1. [![Binder](https://mybinder.org/badge_logo.svg) **Camera definition**](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2F02_camera_definition.ipynb): presents the selection of cameras and creation of custom camera definitions
+1. [![Binder](https://mybinder.org/badge_logo.svg) **Target Objects**](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2F03_target_objects.ipynb): presents the creation of target objects
+1. [![Binder](https://mybinder.org/badge_logo.svg) **Camera Manipulation**](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2F04_camera_manipulation.ipynb): detailed examples on how to manipulate cameras
+1. [![Binder](https://mybinder.org/badge_logo.svg) **PyPho Paper figures**](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2F11_pypho_paper_figures.ipynb): all the figures from the PyPho paper are generated through code illustrated in this notebook
+1. [![Binder](https://mybinder.org/badge_logo.svg) **Case studies**](https://mybinder.org/v2/gh/GeoISTO/PyPho_binder/HEAD?urlpath=%2Fdoc%2Ftree%2Fnotebooks%2F12_pypho_paperècase_studies.ipynb): 3 case studies as presented in the PyPho paper
+
+## Licences
+
+The notebooks are under the [CeCILL-B licence](./LICENCE)
+
+The datasets are under CC-BY 4.0 licence (see [datasets/dataset_licence.txt](datasets/dataset_licence.txt)) with attribution to Gautier LAURENT (2025)
+ISTO, UMR 7327, Univ Orléans, CNRS, BRGM, OSUC, F-45071 Orléans, France
 
 ## Devnotes:
 
